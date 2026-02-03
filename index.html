@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VPN & WiFi Service</title>
+    <style>
+        :root {
+            --primary: #00d2ff;
+            --accent: #ffcc00;
+            --vpn-grad: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --card-bg: rgba(255, 255, 255, 0.08);
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #0f0c29;
+            background: linear-gradient(to bottom, #24243e, #10102e);
+            color: white;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .card {
+            background: var(--card-bg);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 25px;
+            width: 100%;
+            max-width: 380px;
+            padding: 25px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+            text-align: center;
+        }
+
+        .header h2 {
+            margin: 0;
+            font-size: 1.6em;
+            color: var(--primary);
+            text-transform: uppercase;
+        }
+
+        .header p {
+            font-size: 0.85em;
+            opacity: 0.7;
+            margin-top: 5px;
+        }
+
+        .wifi-section {
+            margin: 20px 0;
+        }
+
+        .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(255,255,255,0.05);
+            padding: 12px 18px;
+            border-radius: 15px;
+            margin-bottom: 8px;
+            border-left: 3px solid var(--primary);
+        }
+
+        .gb-text { font-weight: bold; font-size: 1.1em; }
+        .price-text { color: var(--accent); font-weight: bold; }
+        .limit-off { font-size: 0.7em; color: #00ffaa; display: block; }
+
+        .vpn-box {
+            background: var(--vpn-grad);
+            padding: 15px;
+            border-radius: 18px;
+            margin: 25px 0;
+            box-shadow: 0 5px 15px rgba(245, 87, 108, 0.4);
+        }
+
+        .vpn-title { font-weight: bold; font-size: 1.2em; display: block; }
+        .vpn-detail { font-size: 0.85em; opacity: 0.9; }
+
+        .btn-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .btn {
+            text-decoration: none;
+            color: white;
+            padding: 12px;
+            border-radius: 12px;
+            font-size: 0.9em;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .messenger { background: #0084ff; }
+        .telegram { background: #229ED9; }
+        .btn:hover { transform: translateY(-3px); filter: brightness(1.2); }
+
+        .footer-text {
+            font-size: 0.7em;
+            opacity: 0.5;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="header">
+        <h2>Myanmar All SIM WiFi</h2>
+        <p>High Speed • No Speed Limit • 1 Month</p>
+    </div>
+
+    <div class="wifi-section">
+        <div class="item">
+            <div><span class="gb-text">75 GB</span><span class="limit-off">Device Limit မရှိ</span></div>
+            <span class="price-text">3,500 Ks</span>
+        </div>
+        <div class="item">
+            <div><span class="gb-text">100 GB</span><span class="limit-off">Device Limit မရှိ</span></div>
+            <span class="price-text">4,500 Ks</span>
+        </div>
+        <div class="item">
+            <div><span class="gb-text">150 GB</span><span class="limit-off">Device Limit မရှိ</span></div>
+            <span class="price-text">5,500 Ks</span>
+        </div>
+        <div class="item">
+            <div><span class="gb-text">200 GB</span><span class="limit-off">Device Limit မရှိ</span></div>
+            <span class="price-text">6,000 Ks</span>
+        </div>
+    </div>
+
+    <div class="vpn-box">
+        <span class="vpn-title">🇹🇭 Thailand VPN</span>
+        <span class="vpn-detail">1 Month • 1 Device — <b>50 ဘတ်</b></span>
+    </div>
+
+    <div class="btn-group">
+        <a href="https://m.me/YOUR_ID" class="btn messenger">Messenger</a>
+        <a href="https://t.me/YOUR_ID" class="btn telegram">Telegram</a>
+    </div>
+
+    <div class="footer-text">
+        စုံစမ်းဝယ်ယူရန် Button ကိုနှိပ်ပြီး Chat Box တွင်ဆက်သွယ်ပါ
+    </div>
+</div>
+
+</body>
+</html>
